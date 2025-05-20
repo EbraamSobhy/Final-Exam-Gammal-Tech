@@ -29,7 +29,7 @@ int main() {
 
     return 0;
 }
-----------------------------------------
+------------------------------------------------------
 // C Programming Language
     
 #include <stdio.h>
@@ -48,7 +48,7 @@ int main() {
 
     return 0;
 }
-----------------------------------------
+------------------------------------------------------
 // C Programming Language
     
 #include <stdio.h>
@@ -136,30 +136,30 @@ const handleNextClick = () => {
 };
 
 return (
-    <div className="flex flex-col items-center min-h-screen bg-teal-600 py-6">
+    <div className="flex flex-col items-center min-h-screen bg-teal-600 py-4 sm:py-6 px-2 sm:px-4">
     <ToastContainer />
-    <h1 className="text-6xl md:text-8xl text-white font-bold mb-10">
+    <h1 className="text-4xl sm:text-6xl md:text-8xl text-white font-bold mb-6 sm:mb-10 text-center">
         Phase 1
     </h1>
     
-    <div className="w-11/12 md:w-4/5 max-w-4xl h-3/4 bg-black border-2 border-green-500 p-5 shadow-lg shadow-green-500/30 rounded-md overflow-auto">
-        <pre className="text-green-500 font-mono whitespace-pre-wrap">
+    <div className="w-full sm:w-11/12 md:w-4/5 max-w-4xl h-[75vh] sm:h-3/4 bg-black border-2 border-green-500 p-3 sm:p-5 shadow-lg shadow-green-500/30 rounded-md overflow-auto">
+        <pre className="text-green-500 font-mono whitespace-pre-wrap text-sm sm:text-base">
         {displayText}
         </pre>
     </div>
     
     {showTimer && (
-        <div className="mt-6 text-2xl md:text-3xl bg-black px-6 py-3 rounded-full border-4 border-black text-yellow-300 font-mono">
+        <div className="mt-4 sm:mt-6 text-xl sm:text-2xl md:text-3xl bg-black px-4 sm:px-6 py-2 sm:py-3 rounded-full border-4 border-black text-yellow-300 font-mono">
         Time left: {timeLeft} seconds
         </div>
     )}
     
-    <div className="w-full max-w-6xl flex justify-end mt-4">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition-colors duration-300 flex items-center"
+    <div className="w-full max-w-6xl flex justify-end mt-4 px-2 sm:px-4">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 sm:px-6 rounded-lg shadow-lg transition-colors duration-300 flex items-center text-sm sm:text-base"
             onClick={handleNextClick}
             >
             Next
-            <svg className="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14"></path>
             <path d="M12 5l7 7-7 7"></path>
             </svg>
